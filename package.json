@@ -2,7 +2,7 @@
   "name": "deep-thoughts",
   "version": "1.0.0",
   "description": "",
-  "main": "server/server.js",
+  "main": "index.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "cd server && npm start",
@@ -11,21 +11,22 @@
     "seed": "cd server && npm run seed",
     "heroku-postbuild": "cd client && npm run build"
   },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "if-env": "^1.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.2"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/albenchris/deep-thoughts.git"
+    "url": "git+https://github.com/Jtaustin19/deep-thoughts.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/albenchris/deep-thoughts/issues"
+    "url": "https://github.com/Jtaustin19/deep-thoughts/issues"
   },
-  "homepage": "https://github.com/albenchris/deep-thoughts#readme",
-  "dependencies": {
-    "if-env": "^1.0.4"
-  },
-  "devDependencies": {
-    "concurrently": "^6.0.2"
-  }
+  "homepage": "https://github.com/Jtaustin19/deep-thoughts#readme"
 }
