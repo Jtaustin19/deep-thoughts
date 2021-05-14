@@ -11,13 +11,6 @@
     "seed": "cd server && npm run seed",
     "heroku-postbuild": "cd client && npm run build"
   },
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "if-env": "^1.0.4"
-  },
-  "devDependencies": {
-    "concurrently": "^6.0.2"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jtaustin19/deep-thoughts.git"
@@ -28,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/Jtaustin19/deep-thoughts/issues"
   },
-  "homepage": "https://github.com/Jtaustin19/deep-thoughts#readme"
+  "homepage": "https://github.com/Jtaustin19/deep-thoughts#readme",
+  "dependencies": {
+    "if-env": "^1.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.2"
+  }
 }
